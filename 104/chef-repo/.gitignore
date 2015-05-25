@@ -1,0 +1,10 @@
+/cookbooks/
+/data_bag_key
+/tmp
+
+*~
+*.dump
+*.swp
+.DS_Store
+.rbenv-gemsets
+/vendor/bundle

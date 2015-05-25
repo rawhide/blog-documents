@@ -1,0 +1,22 @@
+{
+  "name": "ap-rails",
+  "default_attributes": { },
+  "override_attributes": {
+    "rbenv": {
+      "ruby_versions": ["2.2.2"],
+      "global": "2.2.2"
+    }
+  },
+  "json_class": "Chef::Role",
+  "description": "",
+  "chef_type": "role",
+  "run_list": [
+    "recipe[setup_package]",
+    "recipe[mysql]",
+    "recipe[mysql::server]",
+    "recipe[rbenv]",
+    "recipe[rbenv::install_ruby]",
+    "recipe[passenger]",
+    "recipe[rails_demo]"
+  ]
+}
